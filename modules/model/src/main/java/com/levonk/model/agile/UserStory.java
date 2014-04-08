@@ -9,6 +9,10 @@ public abstract class UserStory
 	public abstract Moscow getMoscow();
 	public abstract String getDescription();
 	public abstract StoryStatus getStoryStatus();
-	public abstract StoryStatus getStoryStatus();
+	public abstract ZonedDateTime getCreateZonedDateTime();
+	public abstract ZonedDateTime getModifyZonedDateTime();
+	// organization
+	// project
+	// storyID
 
 }
