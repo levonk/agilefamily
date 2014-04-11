@@ -2,17 +2,17 @@ import com.google.auto.value.AutoValue;
 
 @AutoValue
 @ValueType
-public abstract class Person
+public abstract class Organization
 {
 	@Constructor
 	@PackageAccess
-	Person() {};
+	Organization() {};
 
 	@FactoryMethod
-	public static final @NonNull Person create(final String name)
+	public static @NonNull Organization create(final String name)
 	{
 		final ZonedDateTime curTime = ZonedDateTime.now();
-		return new AutoValue_Person(name, curTime, curTime);
+		return new AutoValue_Organization(name, curTime, curTime);
 	}
 
 	@Accessor
@@ -25,5 +25,5 @@ public abstract class Person
 	public abstract @NonNull ZonedDateTime getModifyDateTime();
 
 	@Accessor
-	public abstract @NonNull PersonPK getPersonPK();
+	public abstract @NonNull OrganizationPK getOrginizationPK();
 }
