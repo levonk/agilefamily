@@ -22,10 +22,8 @@
 	</organization>
 
 	<modules>
-		<!--
-		<module>myModule</module>
-		-->
-    <module>common</module>
+		<module>model</module>
+		<module>rest</module>
   </modules>
 
 	<repositories>
